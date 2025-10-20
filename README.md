@@ -1,1 +1,1 @@
-# rails_training
+This is my Rails training repo.
