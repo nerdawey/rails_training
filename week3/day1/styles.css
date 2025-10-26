@@ -1,0 +1,130 @@
+body {
+    background-image: url("GettyImages-833711780-scaled.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Inter', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    max-width: 500px;
+    width: 100%;
+    padding: 40px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15),
+                0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #1a1a1a;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    padding: 16px 32px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    min-width: 180px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#increment-btn { 
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+#increment-btn:hover {
+    background: linear-gradient(135deg, #5568d3 0%, #65408a 100%);
+}
+
+#save-btn {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+#save-btn:hover {
+    background: linear-gradient(135deg, #0d7f72 0%, #2dd46c 100%);
+}
+
+#save-el {
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+    letter-spacing: 0.3px;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 14px 28px;
+    }
+}
+
